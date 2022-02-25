@@ -1,26 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { Redirect, Route, Switch } from "react-router-dom";
+import React, { Component } from "react";
+import Dashboard from "./components/dashboard";
+import NotFound from "./components/not-found";
+import SideBar from "./components/sideBar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button className="btn btn-danger">Hello</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Dashboard></Dashboard>
+        <div className="content">
+          <Switch>
+            <Route path="/customers" component={NotFound} />
+            <Route path="/" component={NotFound} />
+            <Redirect from="/index" to="/" exact />
+
+            {/* <Route path="/" exact component={<Dashboard></Dashboard>} /> */}
+          </Switch>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default App;

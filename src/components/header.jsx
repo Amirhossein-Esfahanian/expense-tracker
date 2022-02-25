@@ -89,7 +89,7 @@ export default class Header extends Component {
               className="dropdown-toggle nav-link"
               data-bs-toggle="dropdown"
             >
-              <i className="fa fa-bell" data-feather="bell"></i>{" "}
+              <i className="fa fa-bell"></i>{" "}
               <span className="badge rounded-pill">5</span>
             </a>
             <div className="dropdown-menu notifications">
@@ -248,13 +248,13 @@ export default class Header extends Component {
             </a>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="profile.html">
-                <i data-feather="user" className="me-1"></i> Profile
+                <i className="fa fa-user" className="me-1"></i> Profile
               </a>
               <a className="dropdown-item" href="settings.html">
-                <i data-feather="settings" className="me-1"></i> Settings
+                <i className="fa fa-settings" className="me-1"></i> Settings
               </a>
               <a className="dropdown-item" href="login.html">
-                <i data-feather="log-out" className="me-1"></i> Logout
+                <i className="fa fa-log-out" className="me-1"></i> Logout
               </a>
             </div>
           </li>

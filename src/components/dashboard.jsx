@@ -9,7 +9,12 @@ export default class Dashboard extends Component {
         <div className="main-wrapper">
           <Header></Header>
           <SideBar></SideBar>
-          <h1>gwea</h1>
+          <h1>gweaaaaaaaa</h1>
+          <h1>gweaaaaaaaa</h1>
+          <h1>gweaaaaaaaa</h1>
+          <h1>gweaaaaaaaa</h1>
+          <h1>gweaaaaaaaa</h1>
+          <h1>gweaaaaaaaa</h1>
         </div>
       </div>
     );
